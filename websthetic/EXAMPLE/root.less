@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #09090B;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #71717A;
+    --bodyTextColorWhite: #18181B;
+    /* 13px - 16px */
+
+    --Text900: #18181B;
+    --Text800: #27272A;
+    --Text600: #52525B;
+    --Text500: #71717A;
+
+    --topperFontSize: 1rem;
+    /* 31px - 49px */
+    --headerFontSize: 3.0625rem;
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+
+.cs-topper {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--Text600, #52525B);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.375rem;
+    background: #E4E4E7;
+}
+
+.cs-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.0625rem;
+    font-weight: 700;
+    line-height: 3.675rem;
+    text-align: inherit;
+    max-width: (700/16rem);
+    margin: 0 0 clamp(0.75rem, 1.5vw, 1.5rem);
+    color: var(--Text900);
+    position: relative;
+}
+
+.cs-text {
+   /* default-p */ 
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: var(--bodyFontSize);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--Text800, #27272A);
+    
+    text-align: inherit;
+    width: 100%;
+    max-width: (650/16rem);
+    margin: 0;
+}
+
+.cs-button-solid {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: 2.875rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    color: var(--main-white, #F4F4F5);
+    min-width: (150/16rem);
+    padding: (1/2.5rem);
+    border-radius: 0.375rem;
+    background-color: var(--primary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    gap: 0.625rem;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+}
+
+.cs-h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: #FFF;
+}
+
